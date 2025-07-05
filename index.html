@@ -1,0 +1,421 @@
+<!DOCTYPE HTML>
+<!--
+	Massively by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+
+<head>
+	<title>L'arrosoir</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Quicksand:wght@300..700&display=swap"
+		rel="stylesheet">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+	<style>
+		body {
+			font-family: 'Nunito', sans-serif;
+			font-weight: 400;
+			letter-spacing: 0.02em;
+		}
+
+		h1,
+		h2,
+		h3 {
+			font-weight: 700;
+			letter-spacing: 0.05em;
+		}
+
+		.contact-item {
+			display: flex;
+			align-items: center;
+			justify-content: flex-start;
+			/*align items from the left*/
+			gap: 150px;
+			/* space between label and value */
+			flex-wrap: wrap;
+			/* allows them to go to the next line if space is too small */
+		}
+
+		.contact-item h3 {
+			margin: 0;
+			white-space: nowrap;
+			/* keeps label on one line */
+		}
+
+		.contact-item p {
+			margin: 0;
+			word-break: break-word;
+			/* safely wraps long text if needed */
+		}
+
+		.parent-container {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.section {
+			width: 100%
+		}
+
+		.spacer {
+			height: 50px
+		}
+
+		.centered {
+			text-align: center;
+		}
+	</style>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper" class="fade-in">
+
+		<!-- Intro -->
+		<div id="intro">
+			<h1>L'arrosoir</h1>
+			<p>Un collectif créatif pour faire vivre nos idées
+			<ul class="actions">
+				<li><a href="#header" class="button icon solid solo fa-arrow-down scrolly">Continue</a></li>
+			</ul>
+		</div>
+
+		<!-- Header -->
+		<header id="header">
+			<a href="index.html" class="logo">Kiff Collectif</a>
+		</header>
+
+		<!-- Nav -->
+		<nav id="nav">
+			<ul class="links">
+				<li class="active"><a href="index.html">Accueil</a></li>
+				<li><a href="generic.html">Generic Page</a></li>
+				<li><a href="elements.html">Elements Reference</a></li>
+			</ul>
+			<ul class="icons">
+				<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+				<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+				<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+			</ul>
+		</nav>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Featured Post -->
+			<article class="post featured">
+				<header class="major">
+					<div class="box">
+						<h2>Ici, on lance, on crée, on collabore</a></h2>
+					</div>
+					<style>
+						.box {
+							border: 3px solid #1a1a1a;
+							/* Thicker border */
+							padding: 20px;
+							/* Space inside the box */
+							border-radius: 15px;
+							/* Rounded corners */
+							background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+							/* Gradient background */
+							box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+							/* Soft shadow */
+							display: inline-block;
+							/* Keeps box tight around the text */
+							transition: transform 0.3s ease, box-shadow 0.3s ease;
+						}
+
+						.box:hover {
+							transform: scale(1.05);
+							box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+							/* Enhanced shadow on hover */
+						}
+
+						.body {
+							font-family: 'Nunito', sans-serif;
+							background-color: #fafafa;
+							color: #1a1a1a;
+							padding: 50px;
+							line-height: 1.6;
+						}
+
+						.letter-reveal {
+							font-size: 1.4rem;
+							color: #cfcfcf;
+							/* Light gray base color */
+							max-width: 1200px;
+							margin: 0 auto;
+						}
+
+						.letter-reveal span {
+							display: inline-block;
+							color: #cfcfcf;
+							/* Start with light gray */
+							text-shadow: 0px 0px 0px rgba(0, 0, 0, 0);
+							transition: color 0.4s ease, text-shadow 0.4s ease;
+						}
+
+						.justified {
+							text-align: justify;
+						}
+					</style>
+					<h3>
+						<div class="letter-reveal justified">Nous sommes une équipe de jeunes créatifs animés par la
+							même envie :<br>
+							collaborer, progresser et créer des projets uniques. Dans une
+							<br> industrie souvent exigeante et parfois difficile d’accès pour les profils juniors, nous
+							avons décidé de ne pas attendre qu’on nous ouvre des portes. Nous les construisons
+							nous-mêmes.
+
+							Au sein de ce collectif, chacun peut proposer des idées, rassembler une équipe et donner vie
+							à des projets qui nous ressemblent. On avance ensemble, on se soutient, on apprend les uns
+							des autres et on se donne l’opportunité de briller à travers des collaborations motivantes
+							et bienveillantes.
+
+							Ici, chaque projet est une aventure et chaque membre a sa place.
+						</div>
+					</h3>
+				</header>
+				<a href="#" class="image main"><img src="images/pic01.jpg" alt="" /></a>
+				<ul class="actions special">
+					<li><a href="#" class="button large">NOTRE HISTOIRE</a></li>
+				</ul>
+			</article>
+
+			<!-- Posts -->
+			<section class="posts">
+				<article>
+					<header>
+						<h2><a href="#">Alphonse ANNÉE<br />
+							</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic02.jpg" alt="" /></a>
+					<p></p>Généraliste 3D, spécialisé dans l'animation.</p>
+					<ul class="actions special">
+						<li><a href="https://vimeo.com/952868478" class="button">Animation Reel</a></li>
+						<li><a href="https://vimeo.com/1064133789" class="button">Généraliste Reel</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<h2><a href="#">JULIEN VANNET</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic03.jpg" alt="" /></a>
+					<p></p>Animateur 3D</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">April 18, 2017</span>
+						<h2><a href="#">Ante mattis<br />
+								interdum dolor</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic04.jpg" alt="" /></a>
+					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">April 14, 2017</span>
+						<h2><a href="#">Tempus sed<br />
+								nulla imperdiet</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic05.jpg" alt="" /></a>
+					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">April 11, 2017</span>
+						<h2><a href="#">Odio magna<br />
+								sed consectetur</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic06.jpg" alt="" /></a>
+					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul>
+				</article>
+				<article>
+					<header>
+						<span class="date">April 7, 2017</span>
+						<h2><a href="#">Augue lorem<br />
+								primis vestibulum</a></h2>
+					</header>
+					<a href="#" class="image fit"><img src="images/pic07.jpg" alt="" /></a>
+					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+						venenatis dolor imperdiet dolor mattis sagittis magna etiam.</p>
+					<ul class="actions special">
+						<li><a href="#" class="button">Full Story</a></li>
+					</ul>
+				</article>
+			</section>
+
+			<!-- Footer -->
+			<footer>
+				<div class="pagination">
+					<!--<a href="#" class="previous">Prev</a>-->
+					<a href="#" class="page active">1</a>
+					<a href="#" class="page">2</a>
+					<a href="#" class="page">3</a>
+					<span class="extra">&hellip;</span>
+					<a href="#" class="page">8</a>
+					<a href="#" class="page">9</a>
+					<a href="#" class="page">10</a>
+					<a href="#" class="next">Next</a>
+				</div>
+			</footer>
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+			<section>
+				<form method="post" action="#">
+					<div class="fields">
+						<div class="field">
+							<label for="name">Nom</label>
+							<input type="text" name="name" id="name" />
+						</div>
+						<div class="field">
+							<label for="email">Email</label>
+							<input type="text" name="email" id="email" />
+						</div>
+						<div class="field">
+							<label for="message">Message</label>
+							<textarea name="message" id="message" rows="4"></textarea>
+						</div>
+					</div>
+					<ul class="actions">
+						<li><input type="submit" value="Envoyer" /></li>
+					</ul>
+				</form>
+			</section>
+			<section class="parent-container">
+				<section class="parent-container">
+					<h2>Numéro de téléphone</h2>
+					<div class="spacer"></div>
+					<p3 class="contact-info">06 11 22 33 44</p3>
+				</section>
+				<section class="parent-container">
+					<div class="spacer"></div>
+					<div class="spacer"></div>
+					<h2>Email</h2>
+					<div class="spacer"></div>
+					<p3 class="contact-info"><a href="#">adress.mail@gmail.com</a></p3>
+
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+			<ul>
+				<li>&copy; Untitled</li>
+				<li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+			</ul>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script>
+		gsap.registerPlugin(ScrollTrigger);
+
+		document.addEventListener('DOMContentLoaded', () => {
+			const revealElement = document.querySelector('.letter-reveal');
+			const text = revealElement.textContent.trim(); // Trim removes unwanted spaces at the start/end
+			revealElement.textContent = ''; // Clear the original text so we can rebuild it
+
+			// STEP 1: Split the text into words
+			const words = text.split(' '); // Now we have an array of words
+
+			// STEP 2: Rebuild the paragraph with each word wrapped in a <span>
+			words.forEach((word, index) => {
+				const span = document.createElement('span'); // Create a span for each word
+				span.textContent = word; // Set the text inside the span
+
+				// Add a non-breaking space after each word to keep spacing
+				// Except for the last word to avoid trailing space
+				revealElement.appendChild(span);
+				if (index < words.length - 1) {
+					revealElement.appendChild(document.createTextNode('\u00A0')); // non-breaking space
+				}
+			});
+
+			// STEP 3: Select all word spans
+			const wordSpans = revealElement.querySelectorAll('span');
+			const totalWords = wordSpans.length;
+
+			// STEP 4: Setup ScrollTrigger
+			ScrollTrigger.create({
+				trigger: revealElement,
+				start: 'top 70%',
+				end: 'bottom 90%',
+				scrub: true,
+
+				onUpdate: (self) => {
+					// Reset all words to the base color when scrolling back to the top
+					if (self.progress === 0) {
+						wordSpans.forEach((word) => {
+							word.style.color = '#cfcfcf';
+							word.style.textShadow = '0px 0px 0px rgba(0,0,0,0)';
+						});
+						return;
+					}
+
+					// Calculate how many words should be fully revealed
+					const revealIndex = Math.floor(self.progress * totalWords);
+
+					wordSpans.forEach((word, index) => {
+						if (index < revealIndex) {
+							// Fully revealed word
+							word.style.color = 'rgb(26, 26, 26)';
+							word.style.textShadow = '1px 1px 4px rgba(0,0,0,0.3)';
+						} else {
+							// Partially faded word
+							const remaining = index - revealIndex;
+							const maxFadeLength = 3;
+
+							const fadeFactor = Math.min(remaining / maxFadeLength, 1);
+							const grayValue = Math.round(26 + (207 - 26) * fadeFactor);
+							const shadowOpacity = 0.3 * (1 - fadeFactor);
+
+							word.style.color = `rgb(${grayValue}, ${grayValue}, ${grayValue})`;
+							word.style.textShadow = `1px 1px 4px rgba(0,0,0,${shadowOpacity})`;
+						}
+					});
+				}
+			});
+		});								
+	</script>
+
+</body>
+
+</html>
